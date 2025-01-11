@@ -16,7 +16,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="Attendance.html">Attendance</a>
@@ -44,40 +44,19 @@
       <div class="col-md-6">
         <h3>Today's Lectures</h3>
         <ul class="list-group">
-          <?php
-          // Replace this with logic to fetch lectures from a database or other source
-          $lectures = array(
-            array("name" => "Lecture 1", "time" => "9:00 AM - 10:00 AM"),
-            array("name" => "Lecture 2", "time" => "10:00 AM - 11:00 AM"),
-            // ... add more lectures
-          );
-          foreach ($lectures as $lecture) {
-            echo "<li class='list-group-item'>{$lecture['name']} - {$lecture['time']}</li>";
-          }
-          ?>
+          <li class="list-group-item">Lecture 1 - 9:00 AM - 10:00 AM</li>
+          <li class="list-group-item">Lecture 2 - 10:00 AM - 11:00 AM</li>
+          <li class="list-group-item">Lecture 3 - 11:00 AM - 12:00 PM</li>
+          <li class="list-group-item">Lecture 4 - 12:00 PM - 1:00 PM</li>
+          <li class="list-group-item">Lecture 5 - 1:00 PM - 2:00 PM</li>
+          <li class="list-group-item">Lecture 6 - 2:00 PM - 3:00 PM</li>
+          <li class="list-group-item">Lecture 7 - 3:00 PM - 4:00 PM</li>
+          <li class="list-group-item">Lecture 8 - 4:00 PM - 5:00 PM</li>
+          <li class="list-group-item">Lecture 9 - 5:00 PM - 6:00 PM</li>
         </ul>
       </div>
       <div class="col-md-6">
         <h3>Mark Attendance</h3>
         <form id="attendanceForm" method="post">
           <div class="mb-3">
-            <label for="userName" class="form-label">Student Name:</label>
-            <input type="text" class="form-control" id="userName" name="userName" required>
-          </div>
-          <div class="mb-3">
-            <label for="lecture" class="form-label">Select Lecture:</label>
-            <select class="form-select" id="lecture" name="lecture">
-              <?php
-              foreach ($lectures as $lecture) {
-                echo "<option value='{$lecture['name']}'>{$lecture['name']}</option>";
-              }
-              ?>
-            </select>
-          </div>
-          <button type="submit" class="btn btn-primary">Mark Attendance</button>
-        </form>
-      </div>
-    </div>
-
-    <div class="mt-5">
-      <h3>Attendance Records</h3>
+            <label for="userName" class="form-label">Student
